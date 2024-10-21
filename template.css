@@ -1,0 +1,340 @@
+/* � zeta software 2004, by Christine Kirchmeier 
+--- Weich ---
+*/
+
+/* GENERAL DEFINITIONS */
+
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* heading */
+h1 {
+	font-weight: bold;
+}
+
+/* logo area */
+.logoarea {
+	padding: 0;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+/* content area */
+.contentarea {
+	padding: 0 15px 15px 0;
+	border-right: 1px solid #000;
+}
+
+/* article area */
+.articlearea {}
+
+.articlearea p {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+ul {
+	list-style-type: square;
+}
+
+/* picture subtitle */
+.bildunterschrift {}
+
+
+/* NAVIGATION & HYPERLINKS */
+
+/* bread crumb */
+.breadcrumb {
+	font-size: 11px;
+	text-align: right;
+	padding-right: 15px;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.breadcrumb a, .breadcrumb a:link, .breadcrumb a:visited, .breadcrumb a:hover, .breadcrumb a:active {
+	text-decoration: none;
+	padding-right: 0;
+	border: none;
+}
+
+/* normal links */
+a:link {}
+
+a:visited {}
+
+a:active {}
+
+a:hover {}
+
+/* 1. Men�ebene inaktiv */
+a.menu1:link, a.menu1:visited, a.menu1:active,a.menu1:hover {
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: normal;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-left-width: 1px;
+	border-left-style: solid;
+	padding: 5px 5px 5px 25px;
+	line-height: 15px;
+	display: block;
+	background-repeat: no-repeat;
+}
+
+a.menu1:hover {
+}
+
+/* 1. Men�ebene aktiv */
+a.menu1active:link, a.menu1active:visited, a.menu1active:active,a.menu1active:hover {	
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: bold;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-left-width: 1px;
+	border-left-style: solid;
+	padding: 5px 5px 5px 25px;
+	line-height: 15px;
+	display: block;
+	background-repeat: no-repeat;
+}
+
+/* 1. Men�ebene ge�ffnet */
+a.menu1open:link, a.menu1open:visited, a.menu1open:active,a.menu1open:hover {
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: normal;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-left-width: 1px;
+	border-left-style: solid;
+	padding: 5px 5px 5px 25px;
+	line-height: 15px;
+	display: block;
+	background-repeat: no-repeat;
+}
+
+/* 1. Men�ebene Bereich */
+.menu1area {}
+
+/* 2. Men�ebene inaktiv*/
+a.menu2:link, a.menu2:visited, a.menu2:active,a.menu2:hover {
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-left-width: 1px;
+	border-left-style: solid;
+	padding: 5px 5px 5px 35px;
+	line-height: 15px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 10px 0;
+}
+
+/* 2. Men�ebene aktiv*/
+a.menu2active:link, a.menu2active:visited, a.menu2active:active,a.menu2active:hover {
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-left-width: 1px;
+	border-left-style: solid;
+	padding: 5px 5px 5px 35px;
+	line-height: 15px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 10px 0;
+}
+
+/* 2. Men�ebene ge�ffnet*/
+a.menu2open:link, a.menu2open:visited, a.menu2open:active,a.menu2open:hover {
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-left-width: 1px;
+	border-left-style: solid;
+	padding: 5px 5px 5px 35px;
+	line-height: 15px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 10px 0;
+}
+
+/* 2. Men�ebene Bereich */
+.menu2area {}
+
+/* 3. Men�ebene inaktiv*/
+a.menu3:link, a.menu3:visited, a.menu3:active,a.menu3:hover {
+	font-size: 10px;
+	font-weight: normal;
+	text-decoration: none;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-left-width: 1px;
+	border-left-style: solid;
+	padding: 5px 5px 5px 45px;
+	line-height: 15px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 20px 0;
+}
+
+/* 3. Men�ebene aktiv*/
+a.menu3active:link, a.menu3active:visited, a.menu3active:active,a.menu3active:hover {
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-left-width: 1px;
+	border-left-style: solid;
+	padding: 5px 5px 5px 45px;
+	line-height: 15px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 20px 0;
+}
+
+/* 3. Men�ebene ge�ffnet*/
+a.menu3open:link, a.menu3open:visited, a.menu3open:active,a.menu3open:hover {
+	font-size: 10px;
+	font-weight: normal;
+	text-decoration: none;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-left-width: 1px;
+	border-left-style: solid;
+	padding: 5px 5px 5px 45px;
+	line-height: 15px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 20px 0;
+}
+
+/* 3. Men�ebene Bereich */
+.menu3area {}
+
+
+/* SPECIFIC CLASS DEFINITIONS */
+
+.lastupdate {
+	text-align: right;
+	padding-right: 15px;
+}
+
+.copyright {
+	text-align: left;
+	padding-left: 25px;
+}
+
+.pagetitle {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#menuplacement {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#submenu1 {
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+
+#submenu1 ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#submenu1 ul li {
+	margin-left: 0;
+	padding-top: 0;
+	padding-left: 0;
+}
+
+#submenu1 ul li a {
+	margin-left: 0;
+}
+
+#submenu2,#submenu2 ul,#submenu2 li {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.cleaner {
+	clear: both;
+	height: 1px;
+	font-size: 1px;
+	border: none;
+	margin: 0; 
+	padding: 0;
+	background: transparent;
+}
+
+.layout2 {
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: none;
+	padding: 0;
+}
+
+.copyleiste {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+.articlearea img.blind {
+	background: transparent;
+	border-width: 0px;
+}
+
+.newsblock {
+	margin: 0;
+}
+
+h2 {
+	padding: 5px;
+	margin: 0;
+}
+
+.newscontent {
+	padding: 5px;
+}
+
+.newscontent p {
+	margin: 5px 0;
+}

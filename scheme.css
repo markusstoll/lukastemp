@@ -1,0 +1,544 @@
+/* � zeta software 2004 
+Design: Kreta
+*/
+
+/* ALLGEMEINES | GENERAL DEFINITIONS */
+
+body {
+	background-image: url(pagebackimage.gif);
+	background-color: #FAA911;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* �berschrift */
+h1 {
+	font-size: 16px;
+	color: #FFFFFF;
+	background-color: transparent;
+	background-image: url(headingbackimage.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	margin-top:10px;
+	padding: 0 0 3px 0;
+	border: none;
+}
+
+/* Logo Bereich */
+.logoarea {
+	background-image: url();
+	background-color: #FFFFFF;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+/* Inhaltsbereich */
+.contentarea {
+	background-image: url();
+	background-color: #404040;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+/* Artikelbereich */
+.articlearea {
+	background-image: url();
+	background-color: #404040;
+	border: none;
+	padding: 0 0 0 0;
+	margin-top:3px;
+}
+
+/* Bildunterschrift */
+.bildunterschrift {
+	font-size: 10px;
+	color: #A1ADB5;
+	background: transparent;
+}
+
+
+/* NAVIGATION & HYPERLINKS */
+
+/* bread crumb */
+.breadcrumb, a.breadcrumb:link,a.breadcrumb:visited,a.breadcrumb:hover,a.breadcrumb:active {
+	color: #FFFFFF;
+	background: #701100;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+a.breadcrumb {
+	display: none;
+}
+
+.breadcrumb span {
+	display: none;
+}
+
+.breadcrumb * {
+	color: #FFFFFF;
+}
+
+/* Normale Links */
+a:link {
+	color: #FA8211;
+}
+
+a:visited {
+	color: #FA8211;
+}
+
+a:active {
+	color: #FA8211;
+}
+
+a:hover {
+	color: #CC4F04;
+}
+
+/* 1. Men�ebene inaktiv */
+.menu1 {
+	color: #FFFFFF;
+	border-color: #000;
+}
+
+a.menu1:link, a.menu1:visited, a.menu1:active {
+	color: #FFFFFF;	
+	background-color: #CC4F04;
+	border-color: #000;
+	background-image: url();
+}
+
+.menueleiste a.menu1:link,.menueleiste a.menu1:visited,.menueleiste a.menu1:active {
+	background-color: transparent;
+}
+
+.onegraph a.menu1:link,.onegraph a.menu1:visited,.onegraph a.menu1:active {
+	background-image: url(menuimageinactivenormal1.gif);
+}
+
+a.menu1:hover {
+	color: #FFFFFF;	
+	background-color: #CC4F04;
+	border-color: #000;
+	background-image: url();
+}
+
+.onegraph a.menu1:hover {
+	background-image: url(menuimageinactivemouseover1.gif);
+}
+
+.menueleiste a.menu1:hover {
+	background-color: transparent;
+}
+
+/* 1. Men�ebene aktiv */
+a.menu1active:link, a.menu1active:visited, a.menu1active:active {	
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #FA8211;
+	border-color: #000;
+}
+
+.onegraph a.menu1active:link,.onegraph a.menu1active:visited,.onegraph a.menu1active:active {	
+	background-image: url(menuimageactivenormal1.gif);
+}
+
+.menueleiste a.menu1active:link,.menueleiste a.menu1active:visited,.menueleiste a.menu1active:active {	
+	background-color: transparent;
+}
+
+a.menu1active:hover {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #FA8211;
+	border-color: #000;
+}
+
+.onegraph a.menu1active:hover {
+	background-image: url(menuimageactivemouseover1.gif);
+}
+
+.menueleiste a.menu1active:hover {
+	background-color: transparent;
+}
+
+/* 1. Men�ebene ge�ffnet */
+a.menu1open:link, a.menu1open:visited, a.menu1open:active {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #CC4F04;
+	border-color: #000;
+}
+
+.onegraph a.menu1open:link,.onegraph a.menu1open:visited,.onegraph a.menu1open:active {
+	background-image: url(menuimageopennormal1.gif);
+}
+
+.menueleiste a.menu1open:link,.menueleiste a.menu1open:visited,.menueleiste a.menu1open:active {
+	background-color: transparent;
+}
+
+a.menu1open:hover {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #CC4F04;
+	border-color: #000;
+}
+
+.onegraph a.menu1open:hover {
+	background-image: url(menuimageopenmouseover1.gif);
+}
+
+.menueleiste a.menu1open:hover {
+	background-color: transparent;
+}
+
+/* 1. Men�ebene Bereich */
+.menu1area {
+	background-image: url();
+	background-color: #CC4F04;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+.menueleiste {
+	background-color: #CC4F04;
+	background-image: url();
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+/* 2. Men�ebene inaktiv*/
+.menu2 {
+	color: #FFFFFF;
+}
+
+a.menu2:link, a.menu2:visited, a.menu2:active {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #CC4F04;
+	border-color: #000;
+}
+
+.onegraph a.menu2:link,.onegraph a.menu2:visited,.onegraph a.menu2:active {
+	background-image: url(menuimageinactivenormal2.gif);
+	background-position: 10px 0;
+}
+
+a.menu2:hover {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #FA8211;
+	border-color: #000;
+}
+
+.onegraph a.menu2:hover {
+	background-image: url(menuimageinactivemouseover2.gif);
+	background-position: 10px 0;
+}
+
+/* 2. Men�ebene aktiv*/
+a.menu2active:link, a.menu2active:visited, a.menu2active:active {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #FA8211;
+	border-color: #000;
+}
+
+.onegraph a.menu2active:link,.onegraph a.menu2active:visited,.onegraph a.menu2active:active {
+	background-image: url(menuimageactivenormal2.gif);
+	background-position: 10px 0;
+}
+
+a.menu2active:hover {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #FA8211;
+	border-color: #000;
+}
+
+.onegraph a.menu2active:hover {
+	background-image: url(menuimageactivemouseover2.gif);
+	background-position: 10px 0;
+}
+
+/* 2. Men�ebene ge�ffnet*/
+a.menu2open:link, a.menu2open:visited, a.menu2open:active {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #FA8211;
+	border-color: #000;
+}
+
+.onegraph a.menu2open:link,.onegraph a.menu2open:visited,.onegraph a.menu2open:active {
+	background-image: url(menuimageopennormal2.gif);
+	background-position: 10px 0;
+}
+
+a.menu2open:hover {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #FA8211;
+	border-color: #000;
+}
+
+.onegraph a.menu2open:hover {
+	background-image: url(menuimageopenmouseover2.gif);
+	background-position: 10px 0;
+}
+
+/* 2. Men�ebene Bereich */
+.menu2area {
+	background-image: url();
+	background-color: #FA8211;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+/* 3. Men�ebene inaktiv*/
+.menu3 {
+	color: #FFFFFF;
+}
+
+a.menu3:link, a.menu3:visited, a.menu3:active {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #FA8211;
+	border-color: #000;
+}
+
+.onegraph a.menu3:link,.onegraph a.menu3:visited,.onegraph a.menu3:active {
+	background-image: url(menuimageinactivenormal3.gif);
+	background-position: 10px 0;
+}
+
+a.menu3:hover {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #FA8211;
+	border-color: #000;
+}
+
+.onegraph a.menu3:hover {
+	background-image: url(menuimageinactivemouseover3.gif);
+	background-position: 10px 0;
+}
+
+/* 3. Men�ebene aktiv*/
+a.menu3active:link, a.menu3active:visited, a.menu3active:active {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #FA8211;
+	border-color: #000;
+}
+
+.onegraph a.menu3active:link,.onegraph a.menu3active:visited,.onegraph a.menu3active:active {
+	background-image: url(menuimageactivenormal3.gif);
+	background-position: 10px 0;
+}
+
+a.menu3active:hover {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #FA8211;
+	border-color: #000;
+}
+
+.onegraph a.menu3active:hover {
+	background-image: url(menuimageactivemouseover3.gif);
+	background-position: 10px 0;
+}
+
+/* 3. Men�ebene ge�ffnet*/
+a.menu3open:link, a.menu3open:visited, a.menu3open:active {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #FA8211;
+	border-color: #000;
+}
+
+.onegraph a.menu3open:link,.onegraph a.menu3open:visited,.onegraph a.menu3open:active {
+	background-image: url(menuimageopennormal3.gif);
+	background-position: 10px 0;
+}
+
+a.menu3open:hover {
+	color: #FFFFFF;
+	background-image: url();
+	background-color: #FA8211;
+	border-color: #000;
+}
+
+.onegraph a.menu3open:hover {
+	background-image: url(menuimageopenmouseover3.gif);
+	background-position: 10px 0;
+}
+
+/* 3. Men�ebene Bereich */
+.menu3area {
+	background-image: url();
+	background-color: #FA8211;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+
+/* SPECIFIC CLASS DEFINITIONS */
+
+.copyleiste {
+	background-color: #CC4F04;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+.lastupdate, .copyright {
+	background-color: #CC4F04;
+}
+
+.copyleiste, .copyleiste *, .lastupdate, .lastupdate *, .copyright, .copyright * {
+	color: #FFFFFF;
+	font-size: 10px;
+}
+
+.copyleiste a, .lastupdate a, .copyright a, .copyleiste a:link, .lastupdate a:link, .copyright a:link,
+.copyleiste a:visited, .lastupdate a:visited, .copyright a:visited, .copyleiste a:hover, .lastupdate a:hover, .copyright a:hover,
+.copyleiste a:active, .lastupdate a:active, .copyright a:active {
+	color: #FFFFFF;
+	font-size: 10px;
+}
+
+/* Layout class definitions */
+
+.layout1 {
+	background-color: #CC4F04;
+	background-image: url();
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+.layout5 {
+	background-image: url();
+	background-color: #404040;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+.layout7 {
+	background-image: url();
+	background-color: #404040;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+.layout7menu1 {
+	background-color: #CC4F04;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+.layout8stripes {
+	background-color: #FA8211;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+.layout8left1 {
+	background-color: #CC4F04;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+.layout8left2 {
+	background-color: #FA8211;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+.layout10 {
+	background-image: url(pagebackimage.gif);
+	background-color: #FAA911;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+.layout12bottom {
+	background-color: #CC4F04;
+}
+
+.layout12title {
+	color: #CC4F04;
+}
+
+.center {
+	background: #000;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+#submenu1 {
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+.news {
+}
+
+.newsblock {
+	background-color: #CC4F04;
+	background-image: url();
+	border: 1px solid #FFFFFF;
+}
+
+h2 {
+	font-weight: bold;
+	background-color: #CC4F04;
+	background-image: url();
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.newscontent, .newscontent * {
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+input, select, textarea {
+	color: #000;
+}
